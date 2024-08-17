@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10a7a2c8-b242-42b6-8645-7dfd4a47e62f" name="Changes" comment="최초커밋">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+    <list default="true" id="10a7a2c8-b242-42b6-8645-7dfd4a47e62f" name="Changes" comment="빈조회 예제">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beandefinition/BeanFefinitionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/xml/xmlAppContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/core/discount/RateDiscountPolicyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/hello/core/discount/RateDiscountPolicyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberServiceInpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/hello/core/member/MemberServiceInpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceInpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceInpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,7 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -59,7 +63,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
@@ -78,8 +82,8 @@
       <recent name="hello.core.discount" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationContextSameBeanFindTest.findBeanByTypeDuplicate">
-    <configuration name="ApplicationContextBasicFindTest.FindBeanByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BeanFefinitionTest.findApplicationBean">
+    <configuration name="ApplicationContextExtendsFindTest.findAllBeanByObjectType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
@@ -88,14 +92,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextBasicFindTest" />
-      <option name="METHOD_NAME" value="FindBeanByName" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="findAllBeanByObjectType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationContextBasicFindTest.FindBeanByName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationContextExtendsFindTest.findAllBeanByParentType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextBasicFindTest" />
-      <option name="METHOD_NAME" value="FindBeanByName2" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="findAllBeanByParentType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationContextBasicFindTest.FindBeanByNameX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationContextExtendsFindTest.findBeanBySubType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
@@ -120,40 +124,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextBasicFindTest" />
-      <option name="METHOD_NAME" value="FindBeanByNameX" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="findBeanBySubType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationContextBasicFindTest.FindBeanByType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanFefinitionTest.findApplicationBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hello.core.beanfind.*" />
+          <option name="PATTERN" value="hello.core.beandefinition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextBasicFindTest" />
-      <option name="METHOD_NAME" value="FindBeanByType" />
+      <option name="PACKAGE_NAME" value="hello.core.beandefinition" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beandefinition.BeanFefinitionTest" />
+      <option name="METHOD_NAME" value="findApplicationBean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationContextSameBeanFindTest.findBeanByTypeDuplicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="xmlAppContext.xmlAppContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hello.core.beanfind.*" />
+          <option name="PATTERN" value="hello.core.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextSameBeanFindTest" />
-      <option name="METHOD_NAME" value="findBeanByTypeDuplicate" />
+      <option name="PACKAGE_NAME" value="hello.core.xml" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.xml.xmlAppContext" />
+      <option name="METHOD_NAME" value="xmlAppContext" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplicationContextSameBeanFindTest.findBeanByTypeDuplicate" />
-        <item itemvalue="JUnit.ApplicationContextBasicFindTest.FindBeanByNameX" />
-        <item itemvalue="JUnit.ApplicationContextBasicFindTest.FindBeanByName2" />
-        <item itemvalue="JUnit.ApplicationContextBasicFindTest.FindBeanByType" />
-        <item itemvalue="JUnit.ApplicationContextBasicFindTest.FindBeanByName" />
+        <item itemvalue="JUnit.BeanFefinitionTest.findApplicationBean" />
+        <item itemvalue="JUnit.xmlAppContext.xmlAppContext" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.findAllBeanByObjectType" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.findAllBeanByParentType" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.findBeanBySubType" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +189,8 @@
       <option name="presentableId" value="Default" />
       <updated>1723717828183</updated>
       <workItem from="1723717829450" duration="6443000" />
-      <workItem from="1723803198904" duration="7215000" />
+      <workItem from="1723803198904" duration="7474000" />
+      <workItem from="1723892168189" duration="5000000" />
     </task>
     <task id="LOCAL-00001" summary="최초커밋">
       <created>1723810438585</created>
@@ -194,15 +199,45 @@
       <option name="project" value="LOCAL" />
       <updated>1723810438585</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="빈조회 예제">
+      <created>1723812477510</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723812477510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="최초커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="최초커밋" />
+    <MESSAGE value="빈조회 예제" />
+    <option name="LAST_COMMIT_MESSAGE" value="빈조회 예제" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

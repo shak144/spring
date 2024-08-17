@@ -7,14 +7,13 @@ public class MemberServiceInpl implements MemberService{
     public MemberServiceInpl(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
-    private final MemberRepository meberRepository = new MemoryMemberRepository();
     @Override
     public void join(Member member) {
-        meberRepository.save(member);
+        memberRepository.save(member);
     }
 
     @Override
     public Member findMember(Long memberId) {
-        return meberRepository.findById(memberId);
+        return memberRepository.findById(memberId);
     }
 }
