@@ -1,5 +1,8 @@
 package hello.core.member;
 
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
 public class MemberServiceImpl implements MemberService{
 
     private  final MemberRepository memberRepository;

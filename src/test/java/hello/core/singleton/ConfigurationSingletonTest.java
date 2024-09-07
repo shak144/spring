@@ -1,14 +1,12 @@
 package hello.core.singleton;
 
 import hello.core.AppConfig;
-import hello.core.member.MemberRepository;
 import hello.core.member.MemberServiceImpl;
 import hello.core.order.OrderServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ConfigurationSingletonTest {
     @Test
@@ -24,5 +22,15 @@ public class ConfigurationSingletonTest {
         //모두 같은 인스턴스를 참고하고 있다.
         //assertThat(memberService.getMemberRepository()).isSameAs(memberRepository);
         //assertThat(orderService.getMemberRepository()).isSameAs(memberRepository);
+    }
+
+    @Test
+    void configurationDeep() {
+        ApplicationContext ac = new
+                AnnotationConfigApplicationContext(AppConfig.class);
+        //AppConfig도 스프링 빈으로 등록된다.
+        AppConfig bean = ac.getBean(AppConfig.class);
+
+
     }
 }
